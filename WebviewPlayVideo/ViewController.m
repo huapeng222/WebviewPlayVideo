@@ -30,8 +30,11 @@
      如果点击视频,自动旋转为横屏播放状态,点击完成按钮,需要是程序变为竖屏状态,需要下边的代码
      */
     UIViewController *vc = [[UIViewController alloc]init];
-    [self presentViewController:vc animated:NO completion:nil];
-    [vc dismissViewControllerAnimated:NO completion:nil];
+    [self presentViewController:vc animated:NO completion:^{
+        dispatch_after(0, dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:NO completion:nil];
+        });
+    }];
     
 }
 -(void)playerWillShowFullScreen:(id)sender{
