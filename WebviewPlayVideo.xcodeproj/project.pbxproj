@@ -416,6 +416,7 @@
 				D0C9D0581B9D6D2900BE360E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0C9D0591B9D6D2900BE360E /* Build configuration list for PBXNativeTarget "WebviewPlayVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				D0C9D05B1B9D6D2900BE360E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
